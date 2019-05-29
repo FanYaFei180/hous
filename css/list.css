@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei',SimHei,"微软雅黑","黑体";
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #666666;
+}
+body{
+    width: 100%;
+    background: #f5f5f5;
+}
+/*搜索*/
+.seach{
+    text-align: center;
+  font-size: 0;
+    margin:.09rem auto;
+    position: relative;
+}
+.seach>input{
+    width: 2.9rem;
+    height:.4rem;
+    position: relative;
+    padding-left:.1rem;
+    border-radius: .05rem;
+}
+.seach>span{
+    display: inline-block;
+    height: .15rem;
+    position: absolute;
+    bottom:.12rem;
+    right:.58rem;
+    border:1px solid #000;
+}
+.seach>a{
+    position: absolute;
+    bottom:.1rem;
+    right:.23rem;
+}
+.seach>a>img{
+    width: .18rem;
+    height: .2rem;
+}
+/*很多*/
+.much{
+   font-size: 0;
+    position: relative;
+}
+.hidea{
+    display: none;
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    top:0;
+    background: rgba(0,0,0,.4);
+    height: 6rem;
+}
+/*主行*/
+.much{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+.form{
+    z-index: 5;
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.12rem;
+    position: relative;
+    background: #FFF;
+}
+.form>li{
+    flex: 1;
+}
+.form>li>h2{
+    line-height: .4rem;
+    padding-left:.2rem;
+    position:relative;
+}
+.form>li i{
+    border: 0.06rem solid transparent;
+    border-top-color: #ccc;
+   position: absolute;
+    top:39%;
+    right:.07rem;
+}
+.form .active{
+    color: #ff8a00;
+    border-top-color: #ff8a00;
+    transform: rotate(180deg);
+}
+/*下拉列表*/
+.pull-list{
+    background: #fff;
+    z-index: 6;
+    display: flex;
+    font-size: 0;
+    position: absolute;
+    top:.4rem;
+    width: 100%;
+}
+.pull-list>li{
+    width: 100%;
+    font-size: .14rem;
+}
+/*区域*/
+.pull-list>.area{
+    display: flex;
+}
+.mess-right-list>li>a:hover{
+    color: #ff8a00;
+}
+.pull-list>.area>.area-left{
+    text-align:center;
+    flex: 2;
+    background: #f0f0f0;
+    border-right: 1px solid #cccccc;
+    font-size: 0.12rem;
+}
+
+.pull-list h2{
+    font-size: .18rem;
+    height: .4rem;
+    line-height: .4rem;
+}
+.pull-list>.area>.mess-right{
+    flex: 7;
+    overflow: hidden;
+}
+.mess-right-list>li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding:.14rem 0;
+}
+.active{
+    color: #ff8a00;
+    background: #fff;
+    margin-right: -1px;
+    border-right: 2px solid #fff;
+}
+/*价格*/
+.price{
+    display: none;
+}
+.price-list>li>a:hover{
+    color: #ff8a00;
+}
+.price-list{
+    padding:0 .2rem;
+}
+.price-list>li{
+    width: 100%;
+    padding:.1rem 0;
+    border-bottom: 1px solid #cccccc;
+}
+.price-list>li>a{
+    font-size: .12rem;
+}
+.price-list>li:last-child{
+    border-bottom: none;
+}
+/*房型*/
+.house-type{
+display: none;
+}
+.house-list>li>span:hover{
+    background: url("../images/SecondHandList/ok.png") center center no-repeat;
+    border: 1px solid #ff8a00;
+
+}
+.house-list{
+    padding:0 .2rem;
+}
+.house-list>li{
+    overflow: hidden;
+    padding:.1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.house-list span{
+    display: inline-block;
+    width: .15rem;
+    height: .15rem;
+    border:1px solid #ccc;
+    float: right;
+    margin-right:.1rem;
+}
+.house-list .btn{
+    display: block;
+    width: 100%;
+    height: .4rem;
+    margin:0 auto;
+    background: #ff8a00;
+    text-align: center;
+    line-height: .4rem;
+    color: white;
+}
+.house-list>li:last-child{
+    padding-top:0;
+    border-bottom: none;
+}
+/*更多*/
+.more{
+display: none;
+}
+.more>ul{
+    padding: .2rem .2rem;
+}
+.more>ul>li{
+padding: .1rem 0;
+}
+.more h3{
+    font-size: .14rem;
+}
+.more .childList{
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: .2rem;
+}
+.more .childList>li{
+    float: left;
+    width: 22%;
+    height: .23rem;
+    border:1px solid #ccc;
+    margin-right:.05rem;
+    margin-top:.1rem;
+    text-align: center;
+    line-height:.23rem ;
+    font-size: .12rem;
+}
+.childList>li:hover{
+    border:1px solid #ff8a00;
+    color: #ff8a00;
+}
+/*列表*/
+#aplys{
+    display: flex;
+    font-size: 0;
+flex-direction: column;
+    padding:0 .2rem;
+}
+#aplys>li{
+    display: flex;
+    padding:.2rem 0;
+    border-bottom: 1px solid #ff8a00;
+}
+#aplys>li:last-child{
+    border-bottom: none;
+}
+#aplys>li>.left{
+   margin-right:.1rem;
+}
+#aplys>li>.left img{
+    width: .8rem;
+    height: .8rem;
+}
+#aplys>li>.right{
+    font-size: .12rem;
+    color: #ccc;
+}
+#aplys>li>.right>h2{
+    font-size: .14rem;
+    margin-bottom:.1rem;
+    color: #000;
+}
+#aplys .right p{
+    line-height: .2rem;
+}
+#aplys .right>p:nth-child(2) {
+    color: #000;
+}
+#aplys>li>.right>p>span{
+    color: #ff8a00;
+}
+
+
+
+
+

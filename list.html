@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二手房列表</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+<!--顶部-->
+<header>
+    <div class="header-left">
+        <a href="index.html" ></a>
+    </div>
+    <div class="header-right">
+        <a href="register.html"><img src="./images/index/my.jpg" alt=""></a>
+        <img src="./images/index/xiazai.jpg" alt="">
+    </div>
+</header>
+<!--搜索-->
+<section class="seach">
+    <input type="text" placeholder="请输入小区名或商圈名称">
+    <span></span>
+    <a href="#"><img src="images/SecondHandList/search_03.png" alt=""></a>
+</section>
+<!--很多-->
+<section class="much">
+    <div class="hidea"></div>
+    <ul class="form">
+        <li><h2><a href="javascript:;" class="">区域 </a><i class=""></i></h2></li>
+        <li><h2><a href="javascript:;">价格 <i></i></a></h2></li>
+        <li><h2><a href="javascript:;">房型 <i></i></a></h2></li>
+        <li><h2><a href="javascript:;">更多 <i></i></a></h2></li>
+    </ul>
+    <ul class="pull-list">
+        <!--区域-->
+        <li class="area">
+            <div class="area-left">
+                <h2 class="active">区域</h2>
+                <h2>地铁</h2>
+            </div>
+            <div class="mess-right">
+                <ul class="mess-right-list">
+                    <li><a href="javascript:;">附近</a></li>
+                    <li><a href="javascript:;">不限</a></li>
+                    <li><a href="javascript:;">不限</a></li>
+                    <li><a href="javascript:;">安贞</a></li>
+                    <li><a href="javascript:;">朝阳</a></li>
+                    <li><a href="javascript:;">奥林匹克公园</a></li>
+                    <li><a href="javascript:;">海淀</a></li>
+                    <li><a href="javascript:;">百子湾</a></li>
+                    <li><a href="javascript:;">昌平</a></li>
+                    <li><a href="javascript:;">北工大</a></li>
+                    <li><a href="javascript:;">丰台</a></li>
+                    <li><a href="javascript:;">北苑</a></li>
+                    <li><a href="javascript:;">石景山</a></li>
+                    <li><a href="javascript:;">CBD</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--价格-->
+        <li class="price">
+            <ul class="price-list">
+               <li><a href="javascript:;">不限</a></li>
+               <li><a href="javascript:;">100万以下</a></li>
+               <li><a href="javascript:;">100万-150万</a></li>
+               <li><a href="javascript:;">150万-200万</a></li>
+               <li><a href="javascript:;">200万-250万</a></li>
+               <li><a href="javascript:;">250万-300万</a></li>
+               <li><a href="javascript:;">自定义价格</a></li>
+            </ul>
+        </li>
+        <!--房型-->
+        <li class="house-type">
+                <ul class="house-list">
+                    <li>不限</li>
+                    <li>
+                        1室 <span></span>
+                    </li>
+                    <li>
+                        2室<span class="activel"></span>
+                    </li>
+                    <li>
+                        3室 <span></span>
+                    </li>
+                    <li>
+                        4室 <span></span>
+                    </li>
+                    <li>
+                        5室 <span></span>
+                    </li>
+                    <li><a class="btn" href="#">确定</a></li>
+                </ul>
+        </li>
+        <!--更多-->
+        <li class="more">
+                <ul>
+                    <li>
+                        <h3>区域</h3>
+                        <ul class="childList">
+                            <li>南</li>
+                            <li>南北</li>
+                            <li>东</li>
+                            <li>西</li>
+                            <li>北</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>面积（平方）</h3>
+                        <ul class="childList">
+                            <li>50以下</li>
+                            <li>50-70</li>
+                            <li>70-90</li>
+                            <li>90-110</li>
+                            <li>110-130</li>
+                            <li>130-150</li>
+                            <li>150-200</li>
+                            <li>200以上</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>标签</h3>
+                        <ul class="childList">
+                            <li>学区房</li>
+                            <li>地铁房</li>
+                            <li>不限购</li>
+                            <li>满两年</li>
+                            <li>满五唯一</li>
+                            <li>降价</li>
+                            <li>新上</li>
+                            <li>独家</li>
+                            <li>有钥匙</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>楼龄</h3>
+                        <ul class="childList">
+                            <li>5年以内</li>
+                            <li>10年以内</li>
+                            <li>10-20年</li>
+                            <li>20年以上</li>
+                        </ul>
+                    </li>
+            </ul>
+        </li>
+    </ul>
+</section>
+<!--列表-->
+<ul id="aplys"></ul>
+<!--底部-->
+<footer>
+    <h4>北京找房无忧网><a href="#">首页</a></h4>
+    <div>
+        <a href="#">
+            <p>iPhone</p>
+            <p>客户端</p>
+        </a>
+        <a href="#">
+            <p>Android</p>
+            <p>客户端</p>
+        </a>
+    </div>
+    <p>北京找房无忧房地产经纪公司</p>
+    <p> 网络经营许可证京ICP备20160812号</p>
+</footer>
+</body>
+<script src="js/public.js"></script>
+<!--<script src="js/jquery-3.4.0.js"></script>-->
+<script src="js/zepto.js"></script>
+<script src="js/doT.min.js"></script>
+
+
+<script src="js/zepto-touch.js"></script>
+<script src="js/list.js"></script>
+<script id="arraystmpl" type="text/x-dot-template">
+    {{~it.list:value:index}}
+    <li>
+        <div class="left"><a href="two_handHous.html"><img src="{{=value.img}}" alt=""></a></div>
+        <div class="right">
+            <h2>{{=value.h2}}</h2>
+            <p>{{=value.p1}}</p>
+            <p>{{=value.p2}} <span>{{=value.span}}</span></p>
+            <p>{{=value.p3}}</p>
+        </div>
+    </li>
+    {{~}}
+</script>
+</html>

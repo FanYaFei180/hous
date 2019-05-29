@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei',SimHei,"微软雅黑","黑体";
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #666666;
+}
+body{
+    width: 100%;
+    background: #f5f5f5;
+}
+/*搜索*/
+.seach{
+    width: 100%;
+    height: 2.2rem;
+    background: url("../images/index/banner.png") no-repeat;
+    background-size: 100% 100%;
+    font-size: 0;
+    text-align: center;
+    line-height: 4rem;
+}
+.seach>input{
+    width: 2.6rem;
+    font-size: .12rem;
+    height: .35rem;
+    border-radius: .05rem;
+    padding-left:.3rem;
+    background:#fff url("../images/index/seach.jpg")  .04rem center no-repeat;
+    background-size: .2rem .2rem;
+}
+/*各种房*/
+.kinds-hous{
+    background: #ff8a00;
+    font-size: .14rem;
+    display: flex;
+    padding: .15rem;
+}
+.kinds-hous>li{
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+.kinds-hous>li img{
+    width: .55rem;
+    height: .55rem;
+}
+/*banner*/
+.banner{
+    font-size: 0;
+    margin:.1rem 0;
+    height: 2.4rem;
+    background: url("../images/index/banner2.png") no-repeat;
+    background-size: 100% 100%;
+}
+/*热门房源*/
+.hotHous{
+    background: #fff;
+    font-size: .12rem;
+}
+.hotHous>.hotHous-top{
+    color: white;
+    background: #ff8a00;
+    padding:.1rem 0 .1rem .2rem;
+}
+.hotHous>.hotHous-top>h1{
+    font-size: .21rem;
+}
+.house-type {
+    display: flex;
+    flex-direction: column;
+    padding: 0 .2rem;
+    background: #fff;
+    font-size: .14rem;
+    border-bottom: 1px solid #DEE9F0;
+}
+.house-type>li{
+    flex: 1;
+    display: flex;
+    padding:.15rem 0;
+    border-bottom: 1px solid #ff0000;
+}
+.house-type>li:last-child{
+    border-bottom: none;
+}
+.house-type>li>.recommend-img{
+    margin-right: .06rem;
+}
+.recommend-img>img{
+    margin-top:.1rem;
+    width: .8rem;
+    height: .8rem;
+}
+.conten{
+    flex: 2;
+    font-size: .12rem;
+}
+.conten>h4{
+    font-size: .18rem;
+}
+.conten>p{
+    overflow: hidden;
+}
+.conten>p>span{
+    float: right;
+}
+.recommend-one>span{
+    color: #ff8a00;
+    font-weight: 700;
+}
+.recommend-one{
+    padding:.05rem 0;
+}
+.recommend-two{
+    color:#999 ;
+    padding:.05rem 0;
+}
+
+.conten>span {
+    display: inline-block;
+    background: #f4f7f9;
+    color: #849AAE;
+    padding: .06rem;
+    margin-right: .1rem;
+}
+/*热门关注*/
+.attention{
+    background: #fff;
+    margin-top:.1rem;
+    border-top:1px solid #DEE9F0;
+    overflow: hidden;
+}
+.attention>div{
+    border-bottom: 1px solid #ff8a00;
+    display: flex;
+    font-size: .18rem;
+    text-align: center;
+}
+.attention>div>a{
+    padding:.17rem 0;
+    flex: 1;
+}
+.attention .border{
+    color: #ff8a00;
+    border-bottom:1px solid#ff8a00
+}
+.attention>.hot{
+    overflow: hidden;
+    font-size: .12rem;
+    padding:.1rem;
+}
+.attention>.hot>li{
+    float: left;
+    width: 50%;
+}
+.attention>.hot>li>a{
+    display: inline-block;
+    font-size: .12rem;
+    padding:.05rem .15rem;
+    font-weight: 500;
+}
+/*广告*/
+.advertising{
+    width: 100%;
+    height: .4rem;
+    display: flex;
+    position: fixed;
+    bottom:0;
+    font-size: .12rem;
+}
+.advertising>div:first-child{
+    background: rgba(0,0,0,.5) url("../images/index/download.png").39rem center no-repeat;
+    background-size: .3rem;
+    font-size:.12rem;
+    color: white;
+    flex: 4;
+    padding-left: .98rem;
+    position: relative;
+}
+.advertising>div:first-child h2{
+    font-weight: 500;
+}
+.advertising>div:last-child{
+    flex: 4;
+    background: #ff8a00;
+    text-align: center;
+    line-height: .4rem;
+}
+.advertising>div:last-child a{
+    display: inline-block;
+    color: white;
+    font-size: .18rem;
+}
+.close{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.close>img{
+    width: .14rem;
+    height: .14rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
