@@ -20,20 +20,22 @@ var $someListLi = $('.pull-list > li');
 $someListLi.hide();
 $formLi.on("click",function () {
     var index = $(this).index();
-    $someListLi.hide();
-    $formLi.find("a").removeClass("active");
-    $formLi.find("i").removeClass("active");
-
-        if ($formLi.find("a").hasClass("active")) {
-             $(this).find("a").removeClass("active");
-            $(this).find("i").removeClass("active");
-            $someListLi.eq(index).hide();
-        }else{
-            $(this).find("i").addClass("active");
-            $(this).find("a").addClass("active");
-            $(".hidea").show();
-            $someListLi.eq(index).show();
-        }
+    if ($(this).find("a").hasClass("active")) {
+        $(this).find("a").removeClass("active");
+        $(this).find("i").removeClass("active");
+        $someListLi.eq(index).hide();
+        $(".hidea").hide();
+    }else{
+        $formLi.each(function () {
+            $formLi.find("a").removeClass("active");
+            $formLi.find("i").removeClass("active");
+            $someListLi.hide();
+        });
+        $(this).find("a").addClass("active");
+        $(this).find("i").addClass("active");
+        $(".hidea").show();
+        $someListLi.eq(index).show();
+    }
     $(".hidea").on("tap",function () {
         $formLi.find("a").removeClass("active");
         $formLi.find("i").removeClass("active");
